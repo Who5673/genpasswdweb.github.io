@@ -25,7 +25,7 @@
     color: white;
     background-color: white;
 }
-body, html {
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -45,11 +45,14 @@ nav {
     height: 100dvh;
     box-sizing: border-box;
     padding: 20px;
-    display: flex;
+    display: none;
     border: 2px solid;
     overflow-y: auto;
     z-index: auto;
     /* position: fixed -> z-index high as nav cannot move */
+}
+nav.show {
+    display: flex;
 }
 nav ul {
     /*position: fixed;
@@ -66,24 +69,22 @@ nav a {
     margin-bottom: 10px;
 }
 main {
-    margin-left: 230px;
     flex: 1; /* Other things are in here */
     padding: 20px;
     margin-bottom: 10000px;
 }
 #headeroptions {
-    color: rgb(255, 115, 0);
+    font-family: Michroma;
+    color: rgb(0, 255, 0);
 }
 #fter {
     z-index: 10;
-    margin-left: 110px;
     border-top: 6px solid;
     margin-top: 800px;
     text-align: center;
 }
 #fter1 {
     z-index: 10;
-    margin-left: 110px;
     border-top: 6px solid;
     margin-top: 100px;
     text-align: center;
@@ -142,11 +143,18 @@ main {
 #option0 {
     background-image: url(img/lock.jpg);
 }
+.menubuttons:hover{
+    background-color: hsl(0, 0%, 70%);
+}
+.menubuttons:active{
+    background-color: hsl(0, 0%, 30%);
+}
 #option1 {
-    margin-top: -121px;
+    background-image: url(img/option2forgen.png);
+    margin-top: -315px;
 }
 #option2 {
-    margin-top: -123px;
+    margin-top: -247px;
 }
 .descrip1 {
     font-weight: bold;
@@ -154,8 +162,39 @@ main {
     font-size: larger;
     width: 250px;
     margin-left: 25px;
-    border: 1px solid;
-    color: rgb(0, 255, 0);
+    border: 2px solid;
+    color: rgb(251, 255, 0);
+}
+.descrip2 {
+   color: rgb(6, 23, 253);
+   border: 2px solid;
+   font-family: monospace;
+   font-size: larger;
+   font-weight: bold;
+   width: 250px;
+   margin-left: 25px;
+}
+#buttonoptionII:visited {
+    background-color: rgb(32, 243, 4);
+}
+#buttonoptionII {
+    margin-top: 20px;
+    width: 100px;
+}
+#buttonoptionII:hover {
+    background-color: rgb(32, 122, 32);
+}
+#buttonoptionII:active {
+    background-color: rgb(10, 32, 10);
+}
+#buttonoptionI:visited {
+    background-color: rgb(32, 243, 4);
+}
+#buttonoptionI:hover {
+    background-color: rgb(32, 122, 32);
+}
+#buttonoptionI:active {
+    background-color: rgb(10, 32, 10);
 }
 @keyframes colorChanger {
     0%{color: red}

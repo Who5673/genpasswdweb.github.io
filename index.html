@@ -9,10 +9,13 @@
 </head>
 <body style="background-image: url(img/background.jpg);">
     <div class="container">
-        <nav style="background-color: black;">
+        <img id="abcdef" class="menubuttons" title="Menu" src="img/menu.svg" width="50" height="50" style="position: fixed;">
+        <nav id="manu" style="background-color: black;">
             <ul>
+                <li style="color: white; margin-bottom: 35px; font-family: 'Ubuntu Sans Mono'; font-size: 60px;">MENU</li>
                 <li><a href="index.html" style="color: yellow; font-family: sans-serif;"><img width="30" height="30" src="img/genpasswdicon.svg" title="home"> Home</a></li>
                 <li><a href="password_generator.html" style="color: yellow; text-decoration: none; font-family: sans-serif;"><img id="ico" width="30" height="30" src="img/key-solid.svg" title="generate password with a specific length">Specific generate</a></li>
+                <li><button id="ghiklm">Close menu</button></li>
             </ul>
         </nav>
         <main>
@@ -37,13 +40,13 @@
                     not want to access the Graphical User Interface, with the exeption of the website.<br><br>
                     <span style="color: aquamarine;">🔎 Visit our website at https://who5673.github.io/genpasswdweb.github.io/<span>
                 </div>
-                <p id="update" style="font-family: Michroma;font-size: 30px; font-weight: 500;">New update:</p>
+                <p id="update" style="font-family: Michroma;font-size: 30px; font-weight: 500;">👉 New update:</p>
                 <ol>
-                    <li style="font-family: 'Ubuntu Sans Mono'; color: yellow;" class="neu">New Web Update;</li><br>
-                    <li style="font-family: 'Ubuntu Sans Mono'; color: yellow;" class="neu">Remastered manpage</li><br>
-                    <li style="font-family: 'Ubuntu Sans Mono'; color: yellow;" class="neu">Remastered genpasswd-modern-tui</li><br>
-                    <li style="font-family: 'Ubuntu Sans Mono'; color: yellow;" class="neu">Remastered genpasswd table</li><br>
-                    <li style="font-family: 'Ubuntu Sans Mono'; color: yellow;" class="neu">Website is being worked in progress</li><br>
+                    <li style="font-family: 'Ubuntu Sans Mono'; color: #9dff00;" class="neu">New Web Update;</li><br>
+                    <li style="font-family: 'Ubuntu Sans Mono'; color: #9dff00;" class="neu">Remastered manpage</li><br>
+                    <li style="font-family: 'Ubuntu Sans Mono'; color: #9dff00;" class="neu">Remastered genpasswd-modern-tui</li><br>
+                    <li style="font-family: 'Ubuntu Sans Mono'; color: #9dff00;" class="neu">Remastered genpasswd table</li><br>
+                    <li style="font-family: 'Ubuntu Sans Mono'; color: #9dff00;" class="neu">Website is being worked in progress</li><br>
                 </ol>
                 <p1 id="manual">Get help in genpasswdtui manpage, get update at genpasswdnews executable</p>
             </section>
@@ -52,16 +55,22 @@
                 <div class="option" id="option0">
                     <h3 style="color: rgb(255, 187, 0);">Generate password with <br>the length of 24 by default</h3>
                     <div class="descrip1" style="text-decoration: none; text-align: center;">
-                        This is an option for generating a strong password 
-                        for users and beginners. For storing this <br>
-                        password, we are going to add a webpage to store it in the future.
+                        Recommend for beginners. This is an option for generating a strong password 
+                        for users and beginners. To store all created <br>
+                        passphrases, we are going to add a webpage to store it in the future.
                     </div>
-                    <button style="margin-top: 20px; width: 100px">Go</button>
+                    <button id="buttonoptionI" style="margin-top: 20px; width: 100px;">Go</button>
                     <br><br>
                 </div>
                 <div class="option" id="option1" style="margin-left: 35%;">
-                    <h3>Generate password with a specific length</h3>
-                    <div class="descrip1">This is also...</div>
+                    <h3>Generate password with <br> a specific length</h3>
+                    <div class="descrip2" style="text-decoration: none; text-align: center;">
+                        You can also generate a password with a specific length like you want.
+                        Unfortunately, we only allow you to use the length between 13-100 chars 
+                        due to the security and not letting you spam that input.
+                    </div>
+                    <button id="buttonoptionII">Go</button>
+                    <br><br>
                 </div>
                 <div class="option" id="option2" style="margin-left: 70%;">
                     <h3>Logs</h3>
@@ -82,7 +91,6 @@
 
         
     </main>
-    <script>
-    </script>
+    <script src="genpasswd.js"></script>
 </body>
 </html>
